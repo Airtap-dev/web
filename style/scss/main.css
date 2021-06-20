@@ -9,7 +9,7 @@
 @font-face {
   font-family: "SFProDisplay-Regular";
   src: url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot");
-  src: url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf") format("truetype"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.svg#SFProDisplay") format("svg");
+  src: url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf") format("truetype"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.svg#SFProDisplay-Regular") format("svg");
 }
 @font-face {
   font-family: "SFProDisplay-Semibold";
@@ -320,7 +320,7 @@ body {
   margin-bottom: 1.5625rem;
 }
 .conBox .rowBox .column .text {
-  font-family: "SFProDisplay";
+  font-family: "SFProDisplay-Regular";
   font-size: 1rem;
   line-height: 2rem;
 }
@@ -353,7 +353,7 @@ body {
 @media only screen and (min-width: 75rem) {
   .conBox .rowBox .column .title {
     font-size: 2rem;
-    margin-bottom: 2.1875rem;
+    margin-bottom: 0.625rem;
   }
 }
 .conBox .btnBox {
@@ -442,7 +442,7 @@ body {
   }
 }
 .footer .box .title {
-  font-family: "SFProDisplay";
+  font-family: "SFProDisplay-Regular";
   font-size: 1.5625rem;
   line-height: 2.1875rem;
   width: 100%;
@@ -503,7 +503,7 @@ body {
   text-align: center;
   flex: 0 0 100%;
   font-size: 0.8125rem;
-  font-family: "SFProDisplay";
+  font-family: "SFProDisplay-Regular";
   /*@media only screen (min-width:$point){@content;}*/
 }
 @media only screen and (min-width: 48rem) {
@@ -517,7 +517,7 @@ body {
   margin-bottom: 0.5rem;
   text-align: center;
   font-size: 0.875rem;
-  font-family: "SFProDisplay";
+  font-family: "SFProDisplay-Regular";
   /*@media only screen (min-width:$point){@content;}*/
 }
 @media only screen and (min-width: 48rem) {

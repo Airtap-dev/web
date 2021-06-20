@@ -251,9 +251,9 @@ body {
                 margin-bottom: calc-rem(25);
             }
             .text {
-                font-family: "SFProDisplay";
+                font-family: "SFProDisplay-Regular";
                 font-size: calc-rem(16);
-                    line-height: calc-rem(32);
+                line-height: calc-rem(32);
             }
             @include breakpoint-min(calc-rem(768)) {
                 width: 28.87%;
@@ -282,7 +282,7 @@ body {
             @include breakpoint-min(calc-rem(1200)) {
                 .title {
                     font-size: calc-rem(32);
-                    margin-bottom: calc-rem(35);
+                    margin-bottom: calc-rem(10);
                 }
                
             }
