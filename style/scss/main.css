@@ -2,24 +2,24 @@
 /* rem calculator */
 /*====mixin for media query=====*/
 @font-face {
-  font-family: "sfprodisplay-medium";
-  src: url("../fonts/sfprodisplay-medium/sfprodisplay-medium.eot");
-  src: url("../fonts/sfprodisplay-medium/sfprodisplay-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/sfprodisplay-medium/sfprodisplay-medium.woff") format("woff"), url("../fonts/sfprodisplay-medium/sfprodisplay-medium.ttf") format("truetype"), url("../fonts/sfprodisplay-medium/sfprodisplay-medium.svg#sfprodisplay-medium") format("svg");
+  font-family: "SFProDisplay-Medium";
+  src: url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot");
+  src: url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.ttf") format("truetype"), url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.svg#SFProDisplay-Medium") format("svg");
 }
 @font-face {
-  font-family: "sfprodisplay-regular";
-  src: url("../fonts/sfprodisplay-regular/sfprodisplay-regular.eot");
-  src: url("../fonts/sfprodisplay-regular/sfprodisplay-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/sfprodisplay-regular/sfprodisplay-regular.woff") format("woff"), url("../fonts/sfprodisplay-regular/sfprodisplay-regular.ttf") format("truetype"), url("../fonts/sfprodisplay-regular/sfprodisplay-regular.svg#sfprodisplay-regular") format("svg");
+  font-family: "SFProDisplay-Regular";
+  src: url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot");
+  src: url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf") format("truetype"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.svg#SFProDisplay") format("svg");
 }
 @font-face {
-  font-family: "sfprodisplay-semibold";
-  src: url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.eot");
-  src: url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.woff") format("woff"), url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.ttf") format("truetype"), url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.svg#sfprodisplay-semibold") format("svg");
+  font-family: "SFProDisplay-Semibold";
+  src: url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.eot");
+  src: url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.ttf") format("truetype"), url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.svg#SFProDisplay-Semibold") format("svg");
 }
 @font-face {
-  font-family: "sfprodisplay-bold";
-  src: url("../fonts/sfprodisplay-bold/sfprodisplay-bold.eot");
-  src: url("../fonts/sfprodisplay-bold/sfprodisplay-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sfprodisplay-bold/sfprodisplay-bold.woff") format("woff"), url("../fonts/sfprodisplay-bold/sfprodisplay-bold.ttf") format("truetype"), url("../fonts/sfprodisplay-bold/sfprodisplay-bold.svg#sfprodisplay-bold") format("svg");
+  font-family: "SFProDisplay-Bold";
+  src: url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot");
+  src: url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.ttf") format("truetype"), url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.svg#SFProDisplay-Bold") format("svg");
 }
 * {
   margin: 0;
@@ -39,7 +39,7 @@ img {
 }
 
 body {
-  font-family: "sfprodisplay-medium";
+  font-family: "SFProDisplay-Medium";
   font-size: 1rem;
 }
 
@@ -98,7 +98,7 @@ body {
   color: #fff;
   text-align: center;
   margin-bottom: 1.6875rem;
-  font-family: "sfprodisplay-semibold";
+  font-family: "SFProDisplay-Semibold";
   position: relative;
   z-index: 2;
   /*@media only screen (min-width:$point){@content;}*/
@@ -177,7 +177,7 @@ body {
   display: block;
 }
 .btnBox .btn.linkBtn .textBox .label1 {
-  font-family: "sfprodisplay-bold";
+  font-family: "SFProDisplay-Bold";
   font-size: 1.125rem;
   display: block;
   cursor: pointer;
@@ -238,7 +238,7 @@ body {
 }
 .conBox .header .title {
   font-size: 1.875rem;
-  font-family: "sfprodisplay-semibold";
+  font-family: "SFProDisplay-Semibold";
   color: #35395B;
   flex: 0 0 100%;
   max-width: 100%;
@@ -315,12 +315,12 @@ body {
 }
 .conBox .rowBox .column .title {
   font-size: 1.5rem;
-  font-family: "sfprodisplay-semibold";
+  font-family: "SFProDisplay-Semibold";
   color: #35395B;
   margin-bottom: 1.5625rem;
 }
 .conBox .rowBox .column .text {
-  font-family: "sfprodisplay-regular";
+  font-family: "SFProDisplay";
   font-size: 1rem;
   line-height: 2rem;
 }
@@ -442,7 +442,7 @@ body {
   }
 }
 .footer .box .title {
-  font-family: "sfprodisplay-regular";
+  font-family: "SFProDisplay";
   font-size: 1.5625rem;
   line-height: 2.1875rem;
   width: 100%;
@@ -503,7 +503,7 @@ body {
   text-align: center;
   flex: 0 0 100%;
   font-size: 0.8125rem;
-  font-family: "sfprodisplay-regular";
+  font-family: "SFProDisplay";
   /*@media only screen (min-width:$point){@content;}*/
 }
 @media only screen and (min-width: 48rem) {
@@ -517,7 +517,7 @@ body {
   margin-bottom: 0.5rem;
   text-align: center;
   font-size: 0.875rem;
-  font-family: "sfprodisplay-regular";
+  font-family: "SFProDisplay";
   /*@media only screen (min-width:$point){@content;}*/
 }
 @media only screen and (min-width: 48rem) {

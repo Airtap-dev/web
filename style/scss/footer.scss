@@ -24,7 +24,7 @@
             }
         }
         .title {
-            font-family: "sfprodisplay-regular";
+            font-family: "SFProDisplay";
             font-size: calc-rem(25);
             line-height: calc-rem(35);
             width: 100%;
@@ -73,7 +73,7 @@
             text-align: center;
             flex: 0 0 100%;
             font-size: calc-rem(13);
-            font-family: "sfprodisplay-regular";
+            font-family: "SFProDisplay";
             @include breakpoint-min(calc-rem(768)) {
                 text-align: left;
                 flex: 1;
@@ -85,7 +85,7 @@
                 margin-bottom: calc-rem(8);
                 text-align: center;
                 font-size: calc-rem(14);
-                font-family: "sfprodisplay-regular";
+                font-family: "SFProDisplay";
                 @include breakpoint-min(calc-rem(768)) {
                     text-align: right;
                     font-size: calc-rem(16);

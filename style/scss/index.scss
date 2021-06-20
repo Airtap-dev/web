@@ -13,7 +13,7 @@ img {
     max-height: 100%;
 }
 body {
-    font-family: "sfprodisplay-medium";
+    font-family: "SFProDisplay-Medium";
     font-size: calc-rem(16);
 }
 .bannerWrapper {
@@ -65,7 +65,7 @@ body {
         color: $textWhite;
         text-align: center;
         margin-bottom: calc-rem(27);
-        font-family: "sfprodisplay-semibold";
+        font-family: "SFProDisplay-Semibold";
         position: relative;
         z-index: 2;
         @include breakpoint-min(calc-rem(768)) {
@@ -124,7 +124,7 @@ body {
             .textBox {
                 display: block;
                 .label1 {
-                    font-family: "sfprodisplay-bold";
+                    font-family: "SFProDisplay-Bold";
                     font-size: calc-rem(18);
                     display: block;cursor: pointer;
                 }
@@ -176,7 +176,7 @@ body {
         margin-bottom: calc-rem(70);
         .title {
             font-size: calc-rem(30);
-            font-family: "sfprodisplay-semibold";
+            font-family: "SFProDisplay-Semibold";
             color: $secondryColor;
             flex: 0 0 100%;
             max-width: 100%;
@@ -246,12 +246,12 @@ body {
             }
             .title {
                 font-size: calc-rem(24);
-                font-family: "sfprodisplay-semibold";
+                font-family: "SFProDisplay-Semibold";
                 color: $secondryColor;
                 margin-bottom: calc-rem(25);
             }
             .text {
-                font-family: "sfprodisplay-regular";
+                font-family: "SFProDisplay";
                 font-size: calc-rem(16);
                     line-height: calc-rem(32);
             }
