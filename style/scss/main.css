@@ -2,24 +2,24 @@
 /* rem calculator */
 /*====mixin for media query=====*/
 @font-face {
-  font-family: "manrope-medium";
-  src: url("../fonts/manrope-medium/manrope-medium.eot");
-  src: url("../fonts/manrope-medium/manrope-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/manrope-medium/manrope-medium.woff") format("woff"), url("../fonts/manrope-medium/manrope-medium.ttf") format("truetype"), url("../fonts/manrope-medium/manrope-medium.svg#manrope-medium") format("svg");
+  font-family: "sfprodisplay-medium";
+  src: url("../fonts/sfprodisplay-medium/sfprodisplay-medium.eot");
+  src: url("../fonts/sfprodisplay-medium/sfprodisplay-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/sfprodisplay-medium/sfprodisplay-medium.woff") format("woff"), url("../fonts/sfprodisplay-medium/sfprodisplay-medium.ttf") format("truetype"), url("../fonts/sfprodisplay-medium/sfprodisplay-medium.svg#sfprodisplay-medium") format("svg");
 }
 @font-face {
-  font-family: "manrope-regular";
-  src: url("../fonts/manrope-regular/manrope-regular.eot");
-  src: url("../fonts/manrope-regular/manrope-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/manrope-regular/manrope-regular.woff") format("woff"), url("../fonts/manrope-regular/manrope-regular.ttf") format("truetype"), url("../fonts/manrope-regular/manrope-regular.svg#manrope-regular") format("svg");
+  font-family: "sfprodisplay-regular";
+  src: url("../fonts/sfprodisplay-regular/sfprodisplay-regular.eot");
+  src: url("../fonts/sfprodisplay-regular/sfprodisplay-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/sfprodisplay-regular/sfprodisplay-regular.woff") format("woff"), url("../fonts/sfprodisplay-regular/sfprodisplay-regular.ttf") format("truetype"), url("../fonts/sfprodisplay-regular/sfprodisplay-regular.svg#sfprodisplay-regular") format("svg");
 }
 @font-face {
-  font-family: "manrope-semibold";
-  src: url("../fonts/manrope-semibold/manrope-semibold.eot");
-  src: url("../fonts/manrope-semibold/manrope-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/manrope-semibold/manrope-semibold.woff") format("woff"), url("../fonts/manrope-semibold/manrope-semibold.ttf") format("truetype"), url("../fonts/manrope-semibold/manrope-semibold.svg#manrope-semibold") format("svg");
+  font-family: "sfprodisplay-semibold";
+  src: url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.eot");
+  src: url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.woff") format("woff"), url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.ttf") format("truetype"), url("../fonts/sfprodisplay-semibold/sfprodisplay-semibold.svg#sfprodisplay-semibold") format("svg");
 }
 @font-face {
-  font-family: "manrope-bold";
-  src: url("../fonts/manrope-bold/manrope-bold.eot");
-  src: url("../fonts/manrope-bold/manrope-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/manrope-bold/manrope-bold.woff") format("woff"), url("../fonts/manrope-bold/manrope-bold.ttf") format("truetype"), url("../fonts/manrope-bold/manrope-bold.svg#manrope-bold") format("svg");
+  font-family: "sfprodisplay-bold";
+  src: url("../fonts/sfprodisplay-bold/sfprodisplay-bold.eot");
+  src: url("../fonts/sfprodisplay-bold/sfprodisplay-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sfprodisplay-bold/sfprodisplay-bold.woff") format("woff"), url("../fonts/sfprodisplay-bold/sfprodisplay-bold.ttf") format("truetype"), url("../fonts/sfprodisplay-bold/sfprodisplay-bold.svg#sfprodisplay-bold") format("svg");
 }
 * {
   margin: 0;
@@ -39,7 +39,7 @@ img {
 }
 
 body {
-  font-family: "manrope-medium";
+  font-family: "sfprodisplay-medium";
   font-size: 1rem;
 }
 
@@ -98,7 +98,7 @@ body {
   color: #fff;
   text-align: center;
   margin-bottom: 1.6875rem;
-  font-family: "manrope-semibold";
+  font-family: "sfprodisplay-semibold";
   position: relative;
   z-index: 2;
   /*@media only screen (min-width:$point){@content;}*/
@@ -177,7 +177,7 @@ body {
   display: block;
 }
 .btnBox .btn.linkBtn .textBox .label1 {
-  font-family: "manrope-bold";
+  font-family: "sfprodisplay-bold";
   font-size: 1.125rem;
   display: block;
   cursor: pointer;
@@ -238,7 +238,7 @@ body {
 }
 .conBox .header .title {
   font-size: 1.875rem;
-  font-family: "manrope-semibold";
+  font-family: "sfprodisplay-semibold";
   color: #35395B;
   flex: 0 0 100%;
   max-width: 100%;
@@ -315,12 +315,12 @@ body {
 }
 .conBox .rowBox .column .title {
   font-size: 1.5rem;
-  font-family: "manrope-semibold";
+  font-family: "sfprodisplay-semibold";
   color: #35395B;
   margin-bottom: 1.5625rem;
 }
 .conBox .rowBox .column .text {
-  font-family: "manrope-regular";
+  font-family: "sfprodisplay-regular";
   font-size: 1rem;
   line-height: 2rem;
 }
@@ -442,7 +442,7 @@ body {
   }
 }
 .footer .box .title {
-  font-family: "manrope-regular";
+  font-family: "sfprodisplay-regular";
   font-size: 1.5625rem;
   line-height: 2.1875rem;
   width: 100%;
@@ -503,7 +503,7 @@ body {
   text-align: center;
   flex: 0 0 100%;
   font-size: 0.8125rem;
-  font-family: "manrope-regular";
+  font-family: "sfprodisplay-regular";
   /*@media only screen (min-width:$point){@content;}*/
 }
 @media only screen and (min-width: 48rem) {
@@ -517,7 +517,7 @@ body {
   margin-bottom: 0.5rem;
   text-align: center;
   font-size: 0.875rem;
-  font-family: "manrope-regular";
+  font-family: "sfprodisplay-regular";
   /*@media only screen (min-width:$point){@content;}*/
 }
 @media only screen and (min-width: 48rem) {
