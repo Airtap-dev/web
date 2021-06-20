@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/scss/main.css">
+</head>
+
+<body>
+  <section class="mainContainer">
+    <section class="bannerWrapper">
+      <div class="bannerBox">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Airtap Logo">
+        </div>
+        <h1 class="title">Airtap is an app for voice chats that bridges the gap between deep work and collaboration</h1>
+        <div class="uiBox">
+          <img src="images/ui.svg" alt="UI design">
+        </div>
+        <div class="btnBox">
+          <a class="btn linkBtn baceBtn" href="images/ui.svg" download>
+            <span class="icon"></span>
+            <span class="textBox">
+              <label class="label1">Download for macOS</label>
+              <label class="label2">.dmg for macOS 10.15 and newer</label>
+            </span>
+          </a>
+        </div>
+        
+      
+      <div id="container">
+        <canvas id="waves"></canvas>
+      </div>
+    </div>
+    </section>
+    <section class="contentWrapper conBox">
+
+      <div class="conatainerBox">
+        <div class="header">
+          <h2 class="title">Here are few reasons
+            to choose airtap</h2>
+          <div class="headerImg">
+            <img src="images/headerImg.png" alt="hold and talk">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="conatainerBox">
+        <div class="rowBox">
+          <div class="column">
+            <h2 class="title">Discreet & customizable</h2>
+            <p class="text">You can schedule collaborative office hours for when you feel chatty or focused hours for
+              when you need to perform at your highest level.</p>
+          </div>
+          <div class="column">
+            <h2 class="title">Respects your <span> time</span></h2>
+            <p class="text">You can stop feeling pressured to react to chat notifications.</p>
+          </div>
+          <div class="column">
+            <h2 class="title">Eliminates <span> meetings</span></h2>
+            <p class="text">You can have instant conversations with anyone. You don’t have to jump into meetings that interrupt your work.</p>
+          </div>
+        </div>
+        <div class="rowBox">
+          <div class="column">
+            <h2 class="title">Puts privacy <span>first</span> </h2>
+            <p class="text">You are always muted by default, but you can push-to-talk whenever you feel like it.</p>
+          </div>
+          <div class="column">
+            <h2 class="title">Fun & <span>collaborative</span></h2>
+            <p class="text">You can hang out in voice rooms with your friends after work.</p>
+          </div>
+          <div class="column">
+            <h2 class="title">Improves remote onboarding</h2>
+            <p class="text">You can check in on new hires easily, and new hires can ask questions with less friction and hesitation.</p>
+          </div>
+        </div>
+        <div class="btnBox">
+          <a class="btn linkBtn gradient" href="images/ui.svg" download>
+            <span class="icon"></span>
+            <span class="textBox">
+              <label class="label1">Download for macOS</label>
+              <label class="label2">.dmg for macOS 10.15 and newer</label>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="box box1">
+        <h3 class="title">We believe in a world without rules or controls, without borders or boundaries. A world where anything is possible.</h3>
+        <div class="footerLogo">
+          <img src="images/logo.svg" alt="Airtap Logo">
+        </div>
+      </div>
+      <div class="box box2 reverse">
+        <p class="copyright">© 2021 Airtap Ltd. </p>
+        <div class="conBox">
+          <p class="text">Reach us at hello@joinairtap.com </p>
+          <p class="text">65 London Wall, London, England EC2M 5TU</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+<style>
+
+
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/sine-waves.min.js"></script>
+<script>/*
+  * Demo of https://github.com/isuttell/sine-waves
+  */
+ 
+ var waves = new SineWaves({
+   el: document.getElementById('waves'),
+   
+   speed: 3,
+   
+   width: function() {
+     return $(window).width();
+   },
+   
+   height: function() {
+     return $(window).height();
+   },
+   
+   ease: 'SineInOut',
+   
+   wavesWidth: '100%',
+   
+   waves: [
+     {
+       timeModifier: 1,
+       lineWidth: 1,
+       amplitude: -100,
+       wavelength: 200
+     },
+     {
+       timeModifier: 0.5,
+       lineWidth: 1,
+       amplitude: -100,
+       wavelength: 200
+     },
+     
+   ],
+  
+   // Called on window resize
+   resizeEvent: function() {
+     var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
+     gradient.addColorStop(0,"rgba(255, 255, 255, 0.2)");
+     gradient.addColorStop(0.5,"rgba(255, 255, 255, 0.5)");
+     gradient.addColorStop(1,"rgba(255, 255, 255, 0.2)");
+     
+     var index = -1;
+     var length = this.waves.length;
+     while(++index < length){
+       this.waves[index].strokeStyle = gradient;
+     }
+     
+     // Clean Up
+     index = void 0;
+     length = void 0;
+     gradient = void 0;
+   }
+ });
+</script>
+</html>

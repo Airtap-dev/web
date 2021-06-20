@@ -1,0 +1,57 @@
+@import "variable.scss";
+/* for font face */
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: "../fonts/" + $family + "/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf")  format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+    }
+    %#{$style-name} {
+        font: {
+            @if $category != "" {
+                family: "#{$style-name}", #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+}
+
+
+
+/* rem calculator */
+@function calc-rem($target) {
+    @return ($target / $text__size--default) * 1rem;
+}
+/*====mixin for media query=====*/
+@mixin breakpoint-min($point){
+   @media only screen and (min-width: $point) { @content ; }
+    /*@media only screen (min-width:$point){@content;}*/
+}
+@mixin breakpoint-max($point){
+    @media only screen and (max-width:$point){@content;}
+}
+
+
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+

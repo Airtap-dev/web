@@ -1,0 +1,104 @@
+.footer {
+    background: $primaryColor;
+    padding: calc-rem(60)calc-rem(40);
+    color: $textWhite;
+    @include breakpoint-min(calc-rem(768)) {padding: calc-rem(60)calc-rem(40);}
+    @include breakpoint-min(calc-rem(1024)) {padding: calc-rem(60);}
+    @include breakpoint-min(calc-rem(1200)) {padding: calc-rem(80);}
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        
+        @include breakpoint-min(calc-rem(768)) {
+            justify-content: space-between;
+        }
+        &.box2{
+            @include breakpoint-min(calc-rem(768)) {
+            align-items: flex-end;
+            }
+        }
+        &.reverse{
+            flex-direction: column-reverse;
+            @include breakpoint-min(calc-rem(768)) {
+                flex-direction: row;
+            }
+        }
+        .title {
+            font-family: "manrope-regular";
+            font-size: calc-rem(25);
+            line-height: calc-rem(35);
+            width: 100%;
+            text-align: center;
+            margin-bottom: calc-rem(70);
+            @include breakpoint-min(calc-rem(768)) {
+                width: 70%;
+                font-size: calc-rem(21);
+            line-height: calc-rem(30);
+            text-align: left;
+            margin-bottom: calc-rem(35);
+            }
+            @include breakpoint-min(calc-rem(1024)) {
+                width: 70%;
+                font-size: calc-rem(31);
+            line-height: calc-rem(40);
+            }
+            @include breakpoint-min(calc-rem(1200)) {
+                width: 77%;
+                max-width: 800px;
+                font-size: calc-rem(40);
+            line-height: calc-rem(45);
+            }
+        }
+        .footerLogo {
+            flex: 0 0 100%;
+                max-width: 100%;
+                margin-bottom: calc-rem(60);
+                img {
+                    width: calc-rem(102);
+                    opacity: 0.4;
+                    display: block;
+                    margin: 0 auto;
+                }
+            @include breakpoint-min(calc-rem(768)) {
+                flex: 0 0 calc-rem(127);
+                max-width: calc-rem(127);
+                margin-bottom: calc-rem(0);
+                img {
+                    width: calc-rem(127);
+                    opacity: 0.4;
+                }
+            }
+        }
+        .copyright {
+            text-align: center;
+            flex: 0 0 100%;
+            font-size: calc-rem(13);
+            font-family: "manrope-regular";
+            @include breakpoint-min(calc-rem(768)) {
+                text-align: left;
+                flex: 1;
+                font-size: calc-rem(16);
+            }
+        }
+        .conBox {
+            .text {
+                margin-bottom: calc-rem(8);
+                text-align: center;
+                font-size: calc-rem(14);
+                font-family: "manrope-regular";
+                @include breakpoint-min(calc-rem(768)) {
+                    text-align: right;
+                    font-size: calc-rem(16);
+                    margin-bottom: calc-rem(20);
+                    
+                }
+                &:last-child {
+                    margin-bottom: calc-rem(30);
+                    @include breakpoint-min(calc-rem(768)) {
+                    margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

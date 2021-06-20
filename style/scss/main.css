@@ -1,0 +1,540 @@
+/* for font face */
+/* rem calculator */
+/*====mixin for media query=====*/
+@font-face {
+  font-family: "manrope-medium";
+  src: url("../fonts/manrope-medium/manrope-medium.eot");
+  src: url("../fonts/manrope-medium/manrope-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/manrope-medium/manrope-medium.woff") format("woff"), url("../fonts/manrope-medium/manrope-medium.ttf") format("truetype"), url("../fonts/manrope-medium/manrope-medium.svg#manrope-medium") format("svg");
+}
+@font-face {
+  font-family: "manrope-regular";
+  src: url("../fonts/manrope-regular/manrope-regular.eot");
+  src: url("../fonts/manrope-regular/manrope-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/manrope-regular/manrope-regular.woff") format("woff"), url("../fonts/manrope-regular/manrope-regular.ttf") format("truetype"), url("../fonts/manrope-regular/manrope-regular.svg#manrope-regular") format("svg");
+}
+@font-face {
+  font-family: "manrope-semibold";
+  src: url("../fonts/manrope-semibold/manrope-semibold.eot");
+  src: url("../fonts/manrope-semibold/manrope-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/manrope-semibold/manrope-semibold.woff") format("woff"), url("../fonts/manrope-semibold/manrope-semibold.ttf") format("truetype"), url("../fonts/manrope-semibold/manrope-semibold.svg#manrope-semibold") format("svg");
+}
+@font-face {
+  font-family: "manrope-bold";
+  src: url("../fonts/manrope-bold/manrope-bold.eot");
+  src: url("../fonts/manrope-bold/manrope-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/manrope-bold/manrope-bold.woff") format("woff"), url("../fonts/manrope-bold/manrope-bold.ttf") format("truetype"), url("../fonts/manrope-bold/manrope-bold.svg#manrope-bold") format("svg");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  font-family: "manrope-medium";
+  font-size: 1rem;
+}
+
+.bannerWrapper {
+  padding: 0.625rem;
+  margin-bottom: 5.0625rem;
+  position: relative;
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .bannerWrapper {
+    padding: 1.25rem;
+  }
+}
+.bannerWrapper .bannerBox {
+  background: linear-gradient(-45deg, #ecd88f 3%, #db6c80, #da9bc0, #9681e2);
+  background-size: 300% 100%;
+  animation: gradient 30s ease infinite;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+.bannerWrapper .bannerBox #waves {
+  position: absolute;
+  z-index: 1;
+  left: -30%;
+  top: 15%;
+  height: 90% !important;
+  width: 160% !important;
+}
+.bannerWrapper .logo {
+  flex: 0 0 100%;
+  margin: 1.875rem 0 4.25rem;
+  /*@media only screen (min-width:$point){@content;}*/
+}
+.bannerWrapper .logo img {
+  width: 8.1875rem;
+}
+@media only screen and (min-width: 48rem) {
+  .bannerWrapper .logo {
+    margin: 2.5rem 0 6.25rem;
+  }
+  .bannerWrapper .logo img {
+    width: auto;
+  }
+}
+.bannerWrapper .title {
+  flex: 0 0 100%;
+  max-width: 52.5rem;
+  font-size: 1.875rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.6875rem;
+  font-family: "manrope-semibold";
+  position: relative;
+  z-index: 2;
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .bannerWrapper .title {
+    font-size: 2.8125rem;
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .bannerWrapper .title {
+    font-size: 3.5rem;
+    line-height: 4.0625rem;
+    margin-bottom: 6.25rem;
+  }
+}
+.bannerWrapper .uiBox {
+  margin-bottom: 4.3125rem;
+  position: relative;
+  z-index: 2;
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .bannerWrapper .uiBox {
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .bannerWrapper .uiBox {
+    margin-bottom: 6.25rem;
+  }
+}
+.bannerWrapper .btnBox {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 3.8125rem;
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .bannerWrapper .btnBox {
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .bannerWrapper .btnBox {
+    margin-bottom: 8rem;
+  }
+}
+
+.btnBox .btn {
+  display: inline-block;
+  height: 4.0625rem;
+  width: 17.5rem;
+  border-radius: 3.75rem;
+  padding: 0.8125rem 1.375rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btnBox .btn.linkBtn {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btnBox .btn.linkBtn .icon {
+  background: url("../../images/appleIcon.svg") no-repeat;
+  height: 2.125rem;
+  width: 1.75rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.btnBox .btn.linkBtn .textBox {
+  display: block;
+}
+.btnBox .btn.linkBtn .textBox .label1 {
+  font-family: "manrope-bold";
+  font-size: 1.125rem;
+  display: block;
+  cursor: pointer;
+}
+.btnBox .btn.linkBtn .textBox .label2 {
+  font-size: 0.6875rem;
+  display: block;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.btnBox .btn.baceBtn {
+  background: #000;
+  color: #fff;
+}
+.btnBox .btn.gradient {
+  background: linear-gradient(90deg, #e76392, #8563d9, #e76392);
+  color: #fff;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+.btnBox .btn.gradient:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.conatainerBox {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .conatainerBox {
+    padding: 0 30px;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .conatainerBox {
+    padding: 0 40px;
+  }
+}
+@media only screen and (min-width: 75rem) {
+  .conatainerBox {
+    padding: 0 60px;
+  }
+}
+
+.conBox .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4.375rem;
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+}
+.conBox .header .title {
+  font-size: 1.875rem;
+  font-family: "manrope-semibold";
+  color: #35395B;
+  flex: 0 0 100%;
+  max-width: 100%;
+  line-height: 2.1875rem;
+  margin-bottom: 2.375rem;
+  text-align: center;
+}
+.conBox .header .headerImg {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.conBox .header .headerImg img {
+  max-width: 324px;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 48rem) {
+  .conBox .header {
+    margin-bottom: 5rem;
+  }
+  .conBox .header .title {
+    flex: 0 0 55%;
+    max-width: 55%;
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+    text-align: left;
+  }
+  .conBox .header .headerImg {
+    flex: 0 0 38%;
+    max-width: 38%;
+  }
+  .conBox .header .headerImg img {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .conBox .header {
+    margin-bottom: 6.5rem;
+  }
+  .conBox .header .title {
+    max-width: 55%;
+    font-size: 2.5rem;
+    line-height: 2.8125rem;
+  }
+  .conBox .header .headerImg {
+    max-width: 38%;
+  }
+}
+@media only screen and (min-width: 75rem) {
+  .conBox .header .title {
+    max-width: 55%;
+    font-size: 3.375rem;
+    line-height: 4.0625rem;
+  }
+  .conBox .header .headerImg {
+    max-width: 38%;
+  }
+}
+.conBox .rowBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.conBox .rowBox .column {
+  width: 100%;
+  margin-right: 0%;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+}
+.conBox .rowBox .column:last-child {
+  margin-right: 0;
+}
+.conBox .rowBox .column .title {
+  font-size: 1.5rem;
+  font-family: "manrope-semibold";
+  color: #35395B;
+  margin-bottom: 1.5625rem;
+}
+.conBox .rowBox .column .text {
+  font-family: "manrope-regular";
+  font-size: 1rem;
+  line-height: 2rem;
+}
+@media only screen and (min-width: 48rem) {
+  .conBox .rowBox .column {
+    width: 28.87%;
+    margin-right: 6.6%;
+    text-align: left;
+    margin-bottom: 4.375rem;
+  }
+  .conBox .rowBox .column .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5625rem;
+    height: 4.0625rem;
+  }
+  .conBox .rowBox .column .title span {
+    display: block;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .conBox .rowBox .column {
+    margin-bottom: 5.75rem;
+  }
+  .conBox .rowBox .column .title {
+    font-size: 1.875rem;
+    margin-bottom: 1.875rem;
+    height: 5rem;
+  }
+}
+@media only screen and (min-width: 75rem) {
+  .conBox .rowBox .column .title {
+    font-size: 2rem;
+    margin-bottom: 2.1875rem;
+  }
+}
+.conBox .btnBox {
+  display: flex;
+  justify-content: center;
+  margin: 0.625rem 0 8.5625rem;
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .conBox .btnBox {
+    margin: 0.9375rem 0 8.125rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .conBox .btnBox {
+    margin: 1.25rem 0 8.75rem;
+  }
+}
+@media only screen and (min-width: 75rem) {
+  .conBox .btnBox {
+    margin: 1.75rem 0 9.375rem;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.footer {
+  background: #000;
+  padding: 3.75rem 2.5rem;
+  color: #fff;
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .footer {
+    padding: 3.75rem 2.5rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .footer {
+    padding: 3.75rem;
+  }
+}
+@media only screen and (min-width: 75rem) {
+  .footer {
+    padding: 5rem;
+  }
+}
+.footer .box {
+  display: flex;
+  flex-wrap: wrap;
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .footer .box {
+    justify-content: space-between;
+  }
+}
+.footer .box.box2 {
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .footer .box.box2 {
+    align-items: flex-end;
+  }
+}
+.footer .box.reverse {
+  flex-direction: column-reverse;
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .footer .box.reverse {
+    flex-direction: row;
+  }
+}
+.footer .box .title {
+  font-family: "manrope-regular";
+  font-size: 1.5625rem;
+  line-height: 2.1875rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4.375rem;
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .footer .box .title {
+    width: 70%;
+    font-size: 1.3125rem;
+    line-height: 1.875rem;
+    text-align: left;
+    margin-bottom: 2.1875rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .footer .box .title {
+    width: 70%;
+    font-size: 1.9375rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 75rem) {
+  .footer .box .title {
+    width: 77%;
+    max-width: 800px;
+    font-size: 2.5rem;
+    line-height: 2.8125rem;
+  }
+}
+.footer .box .footerLogo {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 3.75rem;
+  /*@media only screen (min-width:$point){@content;}*/
+}
+.footer .box .footerLogo img {
+  width: 6.375rem;
+  opacity: 0.4;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 48rem) {
+  .footer .box .footerLogo {
+    flex: 0 0 7.9375rem;
+    max-width: 7.9375rem;
+    margin-bottom: 0rem;
+  }
+  .footer .box .footerLogo img {
+    width: 7.9375rem;
+    opacity: 0.4;
+  }
+}
+.footer .box .copyright {
+  text-align: center;
+  flex: 0 0 100%;
+  font-size: 0.8125rem;
+  font-family: "manrope-regular";
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .footer .box .copyright {
+    text-align: left;
+    flex: 1;
+    font-size: 1rem;
+  }
+}
+.footer .box .conBox .text {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-family: "manrope-regular";
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .footer .box .conBox .text {
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+}
+.footer .box .conBox .text:last-child {
+  margin-bottom: 1.875rem;
+  /*@media only screen (min-width:$point){@content;}*/
+}
+@media only screen and (min-width: 48rem) {
+  .footer .box .conBox .text:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
