@@ -23,6 +23,14 @@ body {
     margin-bottom: calc-rem(15);
 }
 
+h1 {
+    font-size: calc-rem(34);
+    font-family: "SFProDisplay-bold";
+    margin-bottom: calc-rem(15);
+    padding-top: calc-rem(80);
+    text-align: center;
+}
+
 .text {
     font-family: "SFProDisplay-Regular";
     font-size: calc-rem(16);
