@@ -1,0 +1,49 @@
+/* for font face */
+/* rem calculator */
+/*====mixin for media query=====*/
+@font-face {
+  font-family: "SFProDisplay-Medium";
+  src: url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot");
+  src: url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.ttf") format("truetype"), url("../fonts/SFProDisplay-Medium/SFProDisplay-Medium.svg#SFProDisplay-Medium") format("svg");
+}
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  src: url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot");
+  src: url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf") format("truetype"), url("../fonts/SFProDisplay-Regular/SFProDisplay-Regular.svg#SFProDisplay-Regular") format("svg");
+}
+@font-face {
+  font-family: "SFProDisplay-Semibold";
+  src: url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.eot");
+  src: url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.ttf") format("truetype"), url("../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.svg#SFProDisplay-Semibold") format("svg");
+}
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  src: url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot");
+  src: url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.ttf") format("truetype"), url("../fonts/SFProDisplay-Bold/SFProDisplay-Bold.svg#SFProDisplay-Bold") format("svg");
+}
+body {
+  font-family: "SFProDisplay-Medium";
+  font-size: 1rem;
+  max-width: 60%;
+  margin: auto;
+}
+
+body .title {
+  padding-top: 3.125rem;
+  margin-top: 10;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-family: "SFProDisplay-Semibold";
+  margin-bottom: 0.9375rem;
+}
+
+.text {
+  font-family: "SFProDisplay-Regular";
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+/*# sourceMappingURL=legal.css.map */
