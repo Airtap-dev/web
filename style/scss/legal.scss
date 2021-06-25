@@ -1,0 +1,30 @@
+@import "variable";
+@import "mixin";
+@import "fonts.scss";
+body {
+    font-family: "SFProDisplay-Medium";
+    font-size: calc-rem(16);
+    width: 85%;
+    max-width: 850px;
+    margin: auto;
+}
+
+body {
+    .title {
+        padding-top: calc-rem(50);
+        margin-top: 10;
+        text-align: center;
+    }
+}
+
+.title {
+    font-size: calc-rem(24);
+    font-family: "SFProDisplay-Semibold";
+    margin-bottom: calc-rem(15);
+}
+
+.text {
+    font-family: "SFProDisplay-Regular";
+    font-size: calc-rem(16);
+    line-height: calc-rem(32);
+}

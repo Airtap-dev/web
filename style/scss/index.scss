@@ -3,19 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :after,
 :before {
     box-sizing: border-box;
     margin: 0;
 }
+
 img {
     max-width: 100%;
     max-height: 100%;
 }
+
 body {
     font-family: "SFProDisplay-Medium";
     font-size: calc-rem(16);
 }
+
 .bannerWrapper {
     padding: calc-rem(10);
     margin-bottom: calc-rem(81);
@@ -39,11 +43,10 @@ body {
             position: absolute;
             z-index: 1;
             left: -30%;
-            top:15%;
+            top: 15%;
             height: 90% !important;
             width: 160% !important;
-           
-          }
+        }
     }
     .logo {
         flex: 0 0 100%;
@@ -101,6 +104,7 @@ body {
         }
     }
 }
+
 .btnBox {
     .btn {
         display: inline-block;
@@ -126,22 +130,23 @@ body {
                 .label1 {
                     font-family: "SFProDisplay-Bold";
                     font-size: calc-rem(18);
-                    display: block;cursor: pointer;
+                    display: block;
+                    cursor: pointer;
                 }
                 .label2 {
                     font-size: calc-rem(11);
                     display: block;
-                    opacity: 0.8;cursor: pointer;
+                    opacity: 0.8;
+                    cursor: pointer;
                 }
             }
         }
-
         &.baceBtn {
             background: $primaryColor;
             color: $textWhite;
         }
         &.gradient {
-            background: linear-gradient(90deg, #e76392, #8563d9,#e76392);
+            background: linear-gradient(90deg, #e76392, #8563d9, #e76392);
             color: $textWhite;
             background-size: 300% 100%;
             transition: all .4s ease-in-out;
@@ -152,22 +157,24 @@ body {
         }
     }
 }
-.conatainerBox {
+
+.containerBox {
     max-width: 1340px;
     margin: 0 auto;
     padding: 0 40px;
     @include breakpoint-min(calc-rem(768)) {
         padding: 0 30px;
-        }
-        @include breakpoint-min(calc-rem(1024)) {
-            padding: 0 40px;
-            }
+    }
+    @include breakpoint-min(calc-rem(1024)) {
+        padding: 0 40px;
+    }
     @include breakpoint-min(calc-rem(1200)) {
-    padding: 0 60px;
+        padding: 0 60px;
     }
 }
-.contentWrapper {
-}
+
+.contentWrapper {}
+
 .conBox {
     .header {
         display: flex;
@@ -177,7 +184,7 @@ body {
         .title {
             font-size: calc-rem(30);
             font-family: "SFProDisplay-Semibold";
-            color: $secondryColor;
+            color: $secondaryColor;
             flex: 0 0 100%;
             max-width: 100%;
             line-height: calc-rem(35);
@@ -235,7 +242,6 @@ body {
     .rowBox {
         display: flex;
         flex-wrap: wrap;
-
         .column {
             width: 100%;
             margin-right: 0%;
@@ -247,7 +253,7 @@ body {
             .title {
                 font-size: calc-rem(24);
                 font-family: "SFProDisplay-Semibold";
-                color: $secondryColor;
+                color: $secondaryColor;
                 margin-bottom: calc-rem(25);
             }
             .text {
@@ -268,7 +274,6 @@ body {
                         display: block;
                     }
                 }
-               
             }
             @include breakpoint-min(calc-rem(1024)) {
                 margin-bottom: calc-rem(92);
@@ -277,14 +282,12 @@ body {
                     margin-bottom: calc-rem(30);
                     height: calc-rem(80);
                 }
-               
             }
             @include breakpoint-min(calc-rem(1200)) {
                 .title {
                     font-size: calc-rem(32);
                     margin-bottom: calc-rem(10);
                 }
-               
             }
         }
     }
@@ -315,4 +318,3 @@ body {
         background-position: 0% 50%;
     }
 }
-
