@@ -31,11 +31,11 @@
     <section class="bannerWrapper">
       <div class="bannerBox">
         <div class="logo">
-          <img src="images/logo.svg" alt="Airtap Logo">
+          <img src="images/logo.png" width="200" height="63" alt="Airtap Logo">
         </div>
         <h1 class="title">Airtap is an app for voice chats that bridges the gap between deep work and collaboration</h1>
         <div class="uiBox">
-          <img src="images/ui.svg" alt="UI design">
+          <img src="images/ui.png" height="395" alt="UI design">
         </div>
         <div class="btnBox">
           <a class="btn linkBtn baceBtn" href="https://update.airtap.dev/release/latest" download>
@@ -111,7 +111,7 @@
       <div class="box box1">
         <h3 class="title">We believe in a world without rules or controls, without borders or boundaries. A world where anything is possible.</h3>
         <div class="footerLogo">
-          <img src="images/logo.svg" alt="Airtap Logo">
+          <img src="images/logo.png" alt="Airtap Logo">
         </div>
       </div>
       <div class="box box2 reverse">
@@ -130,10 +130,7 @@
 </style>
 <script src="js/jquery.min.js"></script>
 <script src="js/sine-waves.min.js"></script>
-<script>/*
-  * Demo of https://github.com/isuttell/sine-waves
-  */
- 
+<script>
  var waves = new SineWaves({
    el: document.getElementById('waves'),
    
@@ -166,8 +163,7 @@
      },
      
    ],
-  
-   // Called on window resize
+
    resizeEvent: function() {
      var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
      gradient.addColorStop(0,"rgba(255, 255, 255, 0.2)");
