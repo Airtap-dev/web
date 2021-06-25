@@ -286,13 +286,13 @@ a {
                 .title {
                     font-size: calc-rem(30);
                     margin-bottom: calc-rem(30);
-                    height: calc-rem(80);
+                    height: calc-rem(65);
                 }
             }
             @include breakpoint-min(calc-rem(1200)) {
                 .title {
                     font-size: calc-rem(32);
-                    margin-bottom: calc-rem(10);
+                    margin-bottom: calc-rem(0);
                 }
             }
         }
